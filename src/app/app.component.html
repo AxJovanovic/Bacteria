@@ -1,0 +1,17 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Current bacteria population: {{ title }}
+  </h1>
+</div>
+<h2>Here you can change environment for bacteria population development: </h2>
+  <table>
+    <tr>
+        Temperature: <input type="number" #temperature><br></tr>
+    <tr>
+        <button (click)="setEnvironment(temperature.value)">
+          Set environment
+        </button>
+    </tr>
+  </table>
+
